@@ -1,0 +1,64 @@
+.clear{
+    background-image: url("ciel_clair.png");
+}
+
+.clouds{
+    background-image: url("ciel_nuageux.png");
+}
+
+.rain{
+    background-image: url("ciel_pluvieux.png");
+}
+
+.snow{
+    background-image: url("ciel_neige.png");
+}
+
+.mist{
+    background-image: url("ciel_brouillard.png");
+}
+
+.drizzle{
+    background-image: url("ciel_pluie_fine.png");
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-position: center;
+}
+
+h1{
+    position:relative;
+}
+
+#tooltip{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    transition: opacity 0.3s, top 0.5s;
+}
+
+h1:hover #tooltip{
+    top: -50px;
+    opacity: 1;
+}
+
+#ville{
+    font-size: 3em;
+}
+
+i.wi{
+    font-size: 3em;
+    line-height: 3em;
+}
